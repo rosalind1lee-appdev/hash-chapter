@@ -13,4 +13,7 @@ list_of_people = [
   { :name => "Fatimah", :age => 31 },
   { :name => "Carl", :age => 9 },
 ]
-
+lop = list_of_people.select { |hash_element| hash_element[:age] >= 16}
+lop.each do |entry|
+  p entry[:name]
+end
